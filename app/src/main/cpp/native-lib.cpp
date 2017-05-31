@@ -17,6 +17,8 @@ extern "C"
 JNIEXPORT jint JNICALL
 Java_com_example_richard_courtcounter_MainActivity_teamAScore(JNIEnv *env, jobject instance,
                                                               jint a, jint prevScore) {
+if(prevScore == 0 && a ==-1)
+    return prevScore;
 
     jint sum = a + prevScore;
 
@@ -27,7 +29,7 @@ extern "C"
 JNIEXPORT jint JNICALL
 Java_com_example_richard_courtcounter_MainActivity_teamBScore(JNIEnv *env, jobject instance,
                                                               jint a, jint prevScore) {
-
+    if(prevScore == 0 && a == -1)return prevScore;
    jint sum = a + prevScore;
     return  sum;
 
