@@ -41,7 +41,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
 
-        android:layout_marginBottom="20dp"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
 
@@ -49,18 +48,17 @@
         android:gravity="center"
         android:text="@string/numberPointsStart"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/team_a_3points"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/guideline3"
         app:layout_constraintTop_toBottomOf="@+id/team_A"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2" />
 
     <TextView
         android:id="@+id/team_b_score"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
         android:layout_marginTop="20dp"
@@ -68,16 +66,16 @@
         android:text="@string/numberPointsStart"
         android:textAppearance="@android:style/TextAppearance.Large"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/team_b_3points"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@+id/guideline3"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/teamB"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2" />
 
     <Button
         android:id="@+id/team_a_3points"
-        android:layout_width="wrap_content"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -87,11 +85,12 @@
         android:text="@string/points3"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.501" />
 
     <Button
         android:id="@+id/team_b_3points"
-        android:layout_width="wrap_content"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -106,54 +105,54 @@
 
     <Button
         android:id="@+id/team_a_2points"
-        android:layout_width="wrap_content"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:onClick="pointsA"
         android:tag="2"
         android:text="@string/points2"
-        app:layout_constraintBottom_toTopOf="@+id/team_a_freethrow"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/guideline3"
         app:layout_constraintTop_toBottomOf="@+id/team_a_3points"
-        app:layout_constraintVertical_bias="0.151" />
+        app:layout_constraintHorizontal_bias="0.501"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7" />
 
     <Button
         android:id="@+id/team_b_2points"
-        android:layout_width="wrap_content"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="0dp"
         android:onClick="pointsB"
         android:tag="2"
         android:text="@string/points2"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/team_a_2points" />
+        app:layout_constraintRight_toRightOf="@+id/team_b_3points"
+        app:layout_constraintTop_toTopOf="@+id/team_a_2points"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/team_b_3points" />
 
     <Button
         android:id="@+id/team_a_freethrow"
-        android:layout_width="wrap_content"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         android:onClick="pointsA"
         android:tag="1"
         android:text="@string/freethrow"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
-        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.625"
         app:layout_constraintLeft_toLeftOf="@+id/team_a_2points"
-        android:layout_marginRight="0dp"
-        app:layout_constraintRight_toRightOf="@+id/team_a_2points" />
+        app:layout_constraintRight_toRightOf="@+id/team_a_2points"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="92dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="0dp"
@@ -161,26 +160,29 @@
         android:layout_marginTop="8dp"
         android:onClick="reset"
         android:text="@string/reset"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintLeft_toLeftOf="@+id/guideline3"
         app:layout_constraintRight_toLeftOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/team_b_freethrow" />
+        app:layout_constraintTop_toBottomOf="@+id/team_a_stats" />
 
     <Button
         android:id="@+id/team_b_freethrow"
-        android:layout_width="wrap_content"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="0dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:onClick="pointsB"
         android:tag="1"
         android:text="@string/freethrow"
         app:layout_constraintBottom_toBottomOf="@+id/team_a_freethrow"
+        app:layout_constraintLeft_toLeftOf="@+id/team_b_2points"
+        app:layout_constraintTop_toTopOf="@+id/guideline7"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="@+id/team_b_2points"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="@+id/team_b_2points" />
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline3"
@@ -194,36 +196,84 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.66" />
+        app:layout_constraintGuide_percent="0.59" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.26" />
+        app:layout_constraintGuide_percent="0.23" />
 
     <Button
         android:id="@+id/team_a_remove_point"
-        android:layout_width="83dp"
-        android:layout_height="53dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
-        android:text="Remove Point"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:text="Remove 1 Point"
         app:layout_constraintLeft_toLeftOf="@+id/team_a_freethrow"
-        app:layout_constraintTop_toBottomOf="@+id/team_a_freethrow"
-        tools:layout_editor_absoluteY="401dp" />
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/team_a_freethrow"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        android:layout_marginTop="8dp"
+        android:onClick="pointsA"
+        android:tag="-1"/>
 
     <Button
         android:id="@+id/team_b_remove_point"
-        android:layout_width="83dp"
-        android:layout_height="53dp"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
         android:layout_marginTop="0dp"
-        android:text="Remove Point"
+        android:text="Remove 1 Point"
         app:layout_constraintRight_toRightOf="@+id/team_b_freethrow"
         app:layout_constraintTop_toTopOf="@+id/team_a_remove_point"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="403dp" />
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/team_b_freethrow"
+        android:onClick="pointsB"
+        android:tag="-1"/>
+
+    <Button
+        android:id="@+id/team_a_stats"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:text="Stats"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintLeft_toLeftOf="@+id/team_a_remove_point"
+        app:layout_constraintRight_toRightOf="@+id/team_a_remove_point"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <Button
+        android:id="@+id/team_b_stats"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:text="Stats"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintLeft_toLeftOf="@+id/team_b_remove_point"
+        app:layout_constraintRight_toRightOf="@+id/team_b_remove_point"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        tools:layout_editor_absoluteY="366dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline6"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.76" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline7"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.47" />
 
 </android.support.constraint.ConstraintLayout>
