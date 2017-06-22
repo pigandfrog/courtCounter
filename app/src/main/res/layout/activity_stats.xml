@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/team_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Team"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline11"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0625" />
+
+    <TextView
+        android:id="@+id/three_point_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/threes"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline11"
+        app:layout_constraintRight_toLeftOf="@+id/guideline27"
+        app:layout_constraintTop_toBottomOf="@+id/score_tv" />
+
+    <TextView
+        android:id="@+id/two_point_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/twos"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline11"
+        app:layout_constraintRight_toLeftOf="@+id/guideline27"
+        app:layout_constraintTop_toTopOf="@+id/guideline22" />
+
+    <TextView
+        android:id="@+id/free_throws_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/free_throw"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline11"
+        app:layout_constraintRight_toLeftOf="@+id/guideline27"
+        app:layout_constraintTop_toTopOf="@+id/guideline23" />
+
+    <TextView
+        android:id="@+id/shooting_percentage_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/shooting_percentage"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline27"
+        app:layout_constraintRight_toLeftOf="@+id/guideline12"
+        app:layout_constraintTop_toTopOf="@+id/score_tv" />
+
+    <TextView
+        android:id="@+id/score_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/score"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline11"
+        app:layout_constraintRight_toLeftOf="@+id/guideline26"
+        app:layout_constraintTop_toTopOf="@+id/guideline14" />
+
+    <TextView
+        android:id="@+id/three_attempted_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/attempted"
+        app:layout_constraintLeft_toRightOf="@+id/three_point_tv"
+        app:layout_constraintRight_toLeftOf="@+id/guideline28"
+        app:layout_constraintTop_toBottomOf="@+id/three_point_tv" />
+
+    <TextView
+        android:id="@+id/three_made_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/made"
+        app:layout_constraintLeft_toLeftOf="@+id/three_attempted_tv"
+        app:layout_constraintRight_toLeftOf="@+id/guideline28"
+        app:layout_constraintTop_toBottomOf="@+id/three_attempted_tv" />
+
+    <TextView
+        android:id="@+id/two_attempted_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/attempted"
+        app:layout_constraintLeft_toLeftOf="@+id/three_made_tv"
+        app:layout_constraintRight_toLeftOf="@+id/guideline28"
+        app:layout_constraintTop_toBottomOf="@+id/two_point_tv" />
+
+    <TextView
+        android:id="@+id/two_made_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/made"
+        app:layout_constraintLeft_toLeftOf="@+id/two_attempted_tv"
+        app:layout_constraintRight_toLeftOf="@+id/guideline28"
+        app:layout_constraintTop_toBottomOf="@+id/two_attempted_tv" />
+
+    <TextView
+        android:id="@+id/free_throw_attempted_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/attempted"
+        app:layout_constraintLeft_toLeftOf="@+id/two_made_tv"
+        app:layout_constraintRight_toLeftOf="@+id/guideline28"
+        app:layout_constraintTop_toBottomOf="@+id/free_throws_tv" />
+
+    <TextView
+        android:id="@+id/free_throw_made_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/made"
+        app:layout_constraintLeft_toLeftOf="@+id/free_throw_attempted_tv"
+        app:layout_constraintRight_toLeftOf="@+id/guideline28"
+        app:layout_constraintTop_toBottomOf="@+id/free_throw_attempted_tv" />
+
+    <Button
+        android:id="@+id/return_button"
+        style="@android:style/Widget.Button.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/go_back"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline11"
+        app:layout_constraintRight_toLeftOf="@+id/guideline13"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="@+id/guideline24"
+        android:layout_marginTop="8dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline12"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline13"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/other_teams_stats_button"
+        style="@android:style/Widget.Button.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/other_teams_stats"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline13"
+        app:layout_constraintRight_toLeftOf="@+id/guideline12"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="@+id/return_button"
+        android:layout_marginTop="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline14"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.14" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline22"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.39" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline23"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.57" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline24"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7637969" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline26"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline27"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.453125" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline28"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.734375" />
+
+    <TextView
+        android:id="@+id/free_throw_percentage_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="@string/percentage"
+        app:layout_constraintTop_toTopOf="@+id/free_throws_tv"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline28"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

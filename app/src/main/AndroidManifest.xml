@@ -10,11 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".StartingClass"
+            android:windowSoftInputMode="stateAlwaysVisible">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".MyAlertActivity"
+            android:theme="@style/AppTheme.myCustom"></activity>
+
+        <activity android:name=".StatsActivity">
+
+        </activity>
+
+        <activity
+            android:name=".RemoveNames"
+            android:theme="@style/AppTheme.myCustom.Almost">
+
         </activity>
     </application>
 

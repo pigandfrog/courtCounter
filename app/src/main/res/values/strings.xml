@@ -7,4 +7,25 @@
     <string name="freethrow">Free Throw</string>
     <string name="reset">Reset</string>
     <string name="numberPointsStart">0</string>
+    <string name="make">Make</string>
+    <string name="misss">Miss</string>
+    <string name="point3">3 Point</string>
+    <string name="point2">2 Point</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="all_data_lost">All data will be lost</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="threes">3 point baskets:  </string>
+    <string name="twos">2 point baskets:  </string>
+    <string name="free_throw">Free throws:  </string>
+    <string name="shooting_percentage">Shooting Percentage:  </string>
+    <string name="attempted">Attempted:  </string>
+    <string name="score">Score:  </string>
+    <string name="made">Made:  </string>
+    <string name="go_back">Go to Home Screen</string>
+    <string name="other_teams_stats">Other Teams Stats</string>
+    <string name="percentage">Percentage:</string>
+    <string name="enter_first_team_name">Please enter the first team\'s name</string>
+    <string name="enter_second_team_name">Please enter the second team\'s name</string>
+    <string name="use_same_names">Do you want to use the same team names?</string>
 </resources>
